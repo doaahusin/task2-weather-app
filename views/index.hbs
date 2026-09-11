@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weatherly</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>🍃</span>
+            Weatherly
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">About</a>
+            <a href="#">Team</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <p class="tagline">
+                SAME WORLD • DIFFERENT SKIES
+            </p>
+            <h1>
+                Weather, wherever you are.
+            </h1>
+            <p class="description">
+                Enter a country or city to get real-time weather information.
+            </p>
+
+
+             <form id="weatherForm">
+
+                <div class="search-box">
+
+                    <span class="location-icon">📍</span>
+
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Enter a country or city (e.g. Egypt, London, Paris)"
+                    >
+
+                    <button type="submit">
+                         Search
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <div class="weather-card" style="display: none;">
+
+                <div class="weather-top">
+
+                    <div class="location-info">
+                        <h2 id="location-name">Cairo, Egypt</h2>
+                        <p id="date">Friday, 16 May 2025</p>
+                    </div>
+
+                    <div class="temperature-info">
+                        <span class="sun">☀️</span>
+
+                        <div>
+                            <h2 id="temperature">30°C</h2>
+                            <p class="weather-status">Sunny</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="detail">
+                        <span>➤</span>
+
+                        <div>
+                            <p>Latitude</p>
+                            <strong id="latitude">30.0444</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="divider"></div>
+
+
+                    <div class="detail">
+                        <span>➤</span>
+
+                        <div>
+                            <p>Longitude</p>
+                            <strong id="longitude">31.2357</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="error-message" id="error"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+            © 2026 Weatherly. Built with Node.js, Express and WeatherAPI.
+        
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
